@@ -1,0 +1,440 @@
+{
+  "header" : {
+    "dataModelVersion" : "2"
+  },
+  "content" : {
+    "comments" : "",
+    "componentType" : "PROCESS_GROUP",
+    "connections" : [ {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ {
+        "x" : 1164.652234975244,
+        "y" : 47.56887942425979
+      }, {
+        "x" : 1164.652234975244,
+        "y" : 97.56887942425979
+      } ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "400e25dc-0166-1000-0000-0000784be5c2",
+        "id" : "d76b0730-4606-3093-a9aa-565cd95eafe3",
+        "name" : "PublishKafka",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "0b03e0f0-f8d1-3906-8d08-2d272043caa5",
+      "identifier" : "570caa95-1fcc-35cf-83a5-1d0713d91580",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "400e25dc-0166-1000-0000-0000784be5c2",
+        "id" : "d76b0730-4606-3093-a9aa-565cd95eafe3",
+        "name" : "PublishKafka",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ {
+        "x" : 987.3599853515625,
+        "y" : 267.1789245605469
+      }, {
+        "x" : 987.3599853515625,
+        "y" : 317.1789245605469
+      } ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "400e25dc-0166-1000-0000-0000784be5c2",
+        "id" : "6744d25f-7942-3e05-8707-728d6327985c",
+        "name" : "PutFile",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "0b03e0f0-f8d1-3906-8d08-2d272043caa5",
+      "identifier" : "1264b6f4-0355-3279-baa5-80f158041fc9",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "400e25dc-0166-1000-0000-0000784be5c2",
+        "id" : "6744d25f-7942-3e05-8707-728d6327985c",
+        "name" : "PutFile",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "400e25dc-0166-1000-0000-0000784be5c2",
+        "id" : "d76b0730-4606-3093-a9aa-565cd95eafe3",
+        "name" : "PublishKafka",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "0b03e0f0-f8d1-3906-8d08-2d272043caa5",
+      "identifier" : "e66bf241-82fe-327f-8941-0c30643edbe6",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "400e25dc-0166-1000-0000-0000784be5c2",
+        "id" : "0522380a-f5df-342a-8c68-d04e91eb5b0c",
+        "name" : "GetTwitter",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ {
+        "x" : 257.0682067871094,
+        "y" : 296.1731262207031
+      } ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "400e25dc-0166-1000-0000-0000784be5c2",
+        "id" : "6744d25f-7942-3e05-8707-728d6327985c",
+        "name" : "PutFile",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "0b03e0f0-f8d1-3906-8d08-2d272043caa5",
+      "identifier" : "573112c3-820a-335e-8d30-2f7d2fde2a33",
+      "labelIndex" : 0,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "400e25dc-0166-1000-0000-0000784be5c2",
+        "id" : "0522380a-f5df-342a-8c68-d04e91eb5b0c",
+        "name" : "GetTwitter",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    } ],
+    "controllerServices" : [ ],
+    "funnels" : [ ],
+    "identifier" : "0b03e0f0-f8d1-3906-8d08-2d272043caa5",
+    "inputPorts" : [ ],
+    "labels" : [ ],
+    "name" : "Test Group",
+    "outputPorts" : [ ],
+    "position" : {
+      "x" : 552.0,
+      "y" : 94.0
+    },
+    "processGroups" : [ ],
+    "processors" : [ {
+      "autoTerminatedRelationships" : [ ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-social-media-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.0.3.2.0.0-520"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "0b03e0f0-f8d1-3906-8d08-2d272043caa5",
+      "identifier" : "0522380a-f5df-342a-8c68-d04e91eb5b0c",
+      "name" : "GetTwitter",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 80.6500244140625,
+        "y" : 2.9597434997558594
+      },
+      "properties" : {
+        "Consumer Key" : "alMWXVPV2AoYQZFfDLMPF3hXx",
+        "Access Token" : "30207683-GfejUTwLPK4v7f5C60soqduX3Kv724Un09qDboRRi",
+        "Twitter Endpoint" : "Sample Endpoint"
+      },
+      "propertyDescriptors" : {
+        "Consumer Key" : {
+          "displayName" : "Consumer Key",
+          "identifiesControllerService" : false,
+          "name" : "Consumer Key",
+          "sensitive" : false
+        },
+        "Consumer Secret" : {
+          "displayName" : "Consumer Secret",
+          "identifiesControllerService" : false,
+          "name" : "Consumer Secret",
+          "sensitive" : false
+        },
+        "Access Token" : {
+          "displayName" : "Access Token",
+          "identifiesControllerService" : false,
+          "name" : "Access Token",
+          "sensitive" : false
+        },
+        "Languages" : {
+          "displayName" : "Languages",
+          "identifiesControllerService" : false,
+          "name" : "Languages",
+          "sensitive" : false
+        },
+        "IDs to Follow" : {
+          "displayName" : "IDs to Follow",
+          "identifiesControllerService" : false,
+          "name" : "IDs to Follow",
+          "sensitive" : false
+        },
+        "Twitter Endpoint" : {
+          "displayName" : "Twitter Endpoint",
+          "identifiesControllerService" : false,
+          "name" : "Twitter Endpoint",
+          "sensitive" : false
+        },
+        "Locations to Filter On" : {
+          "displayName" : "Locations to Filter On",
+          "identifiesControllerService" : false,
+          "name" : "Locations to Filter On",
+          "sensitive" : false
+        },
+        "Terms to Filter On" : {
+          "displayName" : "Terms to Filter On",
+          "identifiesControllerService" : false,
+          "name" : "Terms to Filter On",
+          "sensitive" : false
+        },
+        "Access Token Secret" : {
+          "displayName" : "Access Token Secret",
+          "identifiesControllerService" : false,
+          "name" : "Access Token Secret",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 100,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.twitter.GetTwitter",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "success" ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-kafka-0-9-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.0.3.2.0.0-520"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "0b03e0f0-f8d1-3906-8d08-2d272043caa5",
+      "identifier" : "d76b0730-4606-3093-a9aa-565cd95eafe3",
+      "name" : "PublishKafka",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 709.6522349752441,
+        "y" : 7.568879424259791
+      },
+      "properties" : {
+        "compression.type" : "none",
+        "ack.wait.time" : "5 secs",
+        "acks" : "0",
+        "bootstrap.servers" : "172.26.215.240:9092",
+        "security.protocol" : "PLAINTEXT",
+        "max.request.size" : "1 MB",
+        "max.block.ms" : "5 sec",
+        "partitioner.class" : "org.apache.kafka.clients.producer.internals.DefaultPartitioner",
+        "topic" : "socialmedia",
+        "key-attribute-encoding" : "utf-8"
+      },
+      "propertyDescriptors" : {
+        "compression.type" : {
+          "displayName" : "Compression Type",
+          "identifiesControllerService" : false,
+          "name" : "compression.type",
+          "sensitive" : false
+        },
+        "ack.wait.time" : {
+          "displayName" : "Acknowledgment Wait Time",
+          "identifiesControllerService" : false,
+          "name" : "ack.wait.time",
+          "sensitive" : false
+        },
+        "acks" : {
+          "displayName" : "Delivery Guarantee",
+          "identifiesControllerService" : false,
+          "name" : "acks",
+          "sensitive" : false
+        },
+        "bootstrap.servers" : {
+          "displayName" : "Kafka Brokers",
+          "identifiesControllerService" : false,
+          "name" : "bootstrap.servers",
+          "sensitive" : false
+        },
+        "sasl.kerberos.service.name" : {
+          "displayName" : "Kerberos Service Name",
+          "identifiesControllerService" : false,
+          "name" : "sasl.kerberos.service.name",
+          "sensitive" : false
+        },
+        "security.protocol" : {
+          "displayName" : "Security Protocol",
+          "identifiesControllerService" : false,
+          "name" : "security.protocol",
+          "sensitive" : false
+        },
+        "ssl.context.service" : {
+          "displayName" : "SSL Context Service",
+          "identifiesControllerService" : true,
+          "name" : "ssl.context.service",
+          "sensitive" : false
+        },
+        "max.request.size" : {
+          "displayName" : "Max Request Size",
+          "identifiesControllerService" : false,
+          "name" : "max.request.size",
+          "sensitive" : false
+        },
+        "kafka-key" : {
+          "displayName" : "Kafka Key",
+          "identifiesControllerService" : false,
+          "name" : "kafka-key",
+          "sensitive" : false
+        },
+        "max.block.ms" : {
+          "displayName" : "Max Metadata Wait Time",
+          "identifiesControllerService" : false,
+          "name" : "max.block.ms",
+          "sensitive" : false
+        },
+        "partitioner.class" : {
+          "displayName" : "Partitioner class",
+          "identifiesControllerService" : false,
+          "name" : "partitioner.class",
+          "sensitive" : false
+        },
+        "topic" : {
+          "displayName" : "Topic Name",
+          "identifiesControllerService" : false,
+          "name" : "topic",
+          "sensitive" : false
+        },
+        "message-demarcator" : {
+          "displayName" : "Message Demarcator",
+          "identifiesControllerService" : false,
+          "name" : "message-demarcator",
+          "sensitive" : false
+        },
+        "key-attribute-encoding" : {
+          "displayName" : "Key Attribute Encoding",
+          "identifiesControllerService" : false,
+          "name" : "key-attribute-encoding",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.kafka.pubsub.PublishKafka",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "success" ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.0.3.2.0.0-520"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "0b03e0f0-f8d1-3906-8d08-2d272043caa5",
+      "identifier" : "6744d25f-7942-3e05-8707-728d6327985c",
+      "name" : "PutFile",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 532.3599853515625,
+        "y" : 227.17892456054688
+      },
+      "properties" : {
+        "Create Missing Directories" : "true",
+        "Directory" : "/socialmedia",
+        "Conflict Resolution Strategy" : "fail"
+      },
+      "propertyDescriptors" : {
+        "Group" : {
+          "displayName" : "Group",
+          "identifiesControllerService" : false,
+          "name" : "Group",
+          "sensitive" : false
+        },
+        "Owner" : {
+          "displayName" : "Owner",
+          "identifiesControllerService" : false,
+          "name" : "Owner",
+          "sensitive" : false
+        },
+        "Create Missing Directories" : {
+          "displayName" : "Create Missing Directories",
+          "identifiesControllerService" : false,
+          "name" : "Create Missing Directories",
+          "sensitive" : false
+        },
+        "Permissions" : {
+          "displayName" : "Permissions",
+          "identifiesControllerService" : false,
+          "name" : "Permissions",
+          "sensitive" : false
+        },
+        "Maximum File Count" : {
+          "displayName" : "Maximum File Count",
+          "identifiesControllerService" : false,
+          "name" : "Maximum File Count",
+          "sensitive" : false
+        },
+        "Last Modified Time" : {
+          "displayName" : "Last Modified Time",
+          "identifiesControllerService" : false,
+          "name" : "Last Modified Time",
+          "sensitive" : false
+        },
+        "Directory" : {
+          "displayName" : "Directory",
+          "identifiesControllerService" : false,
+          "name" : "Directory",
+          "sensitive" : false
+        },
+        "Conflict Resolution Strategy" : {
+          "displayName" : "Conflict Resolution Strategy",
+          "identifiesControllerService" : false,
+          "name" : "Conflict Resolution Strategy",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutFile",
+      "yieldDuration" : "1 sec"
+    } ],
+    "remoteProcessGroups" : [ ],
+    "variables" : { }
+  }
+}
